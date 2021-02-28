@@ -57,8 +57,8 @@ $\hat\theta$ is a point estimator of $\theta$ (it is a numerical value)
 	\item $P \{\textbf{L} \le \theta \le \textbf{U} \}$ \textbf{Coverage Probability}, in repeated sampling, what percent of samples or Confident Intervals capture true $\theta$.
 	\item 100(1- $\alpha$) \textbf{Confidence Interval }- for unknown fixed parameter $\theta$.
 	\item L,U - \textbf{Lower and Upper Bounds} - RVs because they are functions of sample data. Vary from sample to sample.
-	\item 1-$\alpha$ \textbf{Confidence Level} Probability that estimate will include population parameter $\theta$.
-	\item $\alpha$ \textbf{Level of Significance} Percent chance Confidence Interval will not contain population parameter $\theta$.\newline
+	\item 1-$\alpha$ \textbf{Confidence Level} (Probability) estimate will include population parameter $\theta$.
+	\item $\alpha$ \textbf{Level of Significance} Percent chance Confidence Interval will not contain population parameter $\theta$.
 \end{itemize}
 \Large\textbf{Def: Coverage Probability}
 \newline $P \{\textbf{L} \le \theta \le \textbf{U} \}$ Gives what $\%$ of samples or Confidence Intervals capture true $\theta$.
@@ -71,14 +71,31 @@ $\hat\theta$ is a point estimator of $\theta$ (it is a numerical value)
 \begin{itemize}
 	\item Confidence Intervals are not unique.
 	\item Desirable to have E[Length of CI] to be small.
-	\item If L = -$\infty$ or  U = $\infty$ then we have a one sided interval.
-	\item If L,U are both finite, then we have a two sided interval.\newline
+	\item A one-sided 100(1-$\alpha$) lower-confidence interval on $\theta$:  L = -$\infty  \implies P\{ L \le \theta \} = 1-\alpha$
+	\item A one-sided 100(1-$\alpha$) upper-confidence interval on $\theta$: $U = \infty  \implies P\{ \theta \le U \} = 1-\alpha$
+	\item If L,U are both finite, then we have a two sided interval.
 \end{itemize}
 \Large\textbf{Correctly Interpreting Confidence Intervals}
 \newline \textbf{Not Correct}
 \newline There is 90$\%$ probability that the true population mean is within the interval.
 \newline \textbf{Correct}
-\newline There is a 90$\%$ probability that any given Confidence Interval from a random sample will contain the true population mean.
+\newline There is a 90$\%$ probability that \textul{any given Confidence Interval from a random sample} will contain the true population mean.
+\newline
+\newline
+\Large\textbf{Theorem 11.1: Confidence Interval on the Mean of a Normal Distribution with known Variance}
+\newline Let X be normal random variable with:
+\newline\Large\rule{1.3cm}{0pt} Unknown mean $\mu$
+\newline\Large\rule{1.3cm}{0pt} Known variance $\sigma ^2$
+\newline Suppose a random sample n, ($X_1, X_2,...,X_n$) is taken.
+\newline A 100(1-$\alpha$)$\%$ confidence interval on $\mu$ can be obtained by considering sampling distribution of the sample mean $\bar{X}$.
+\newline
+\newline\textbf{Central Limit Theorem:} 
+\newline
+\newline E($\bar{X}$) = $\mu$ and SD($\bar{X}$) = $\dfrac{\sigma}{\sqrt{n}}$, so $\bar{X} \sim \mathcal{N}(\mu, \dfrac{\sigma ^2}{ n })  $ as n$\to \infty$
+\newline
+\newline Standardizing $\bar{X}$, Z will be a Standard Normal Distribution
+\newline 
+\newline Let Z = $\dfrac{\bar{X} - \mu}{\sigma \\/ \sqrt{n} } \sim \mathcal{N}(0, 1) $
 %\Large\rule{2.3cm}{0pt} \textbf{fixed}
  %\textbf{(Unbiased Estimator)}\newline
  
