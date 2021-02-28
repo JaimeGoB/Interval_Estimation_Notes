@@ -33,13 +33,13 @@ $\hat\theta$ is a point estimator of $\theta$ (it is a numerical value)
 \end{itemize}
 \Large\textbf{Interval Estimators} 
 \newline
-\newline\Large\textbf{Interval Estimate}
+\newline\Large\textbf{Def: Interval Estimate}
 \newline Provides a range of values that best describe the population.
 \newline Let L = L(x) be the Lower Limit
 \newline\Large\rule{0.68cm}{0pt} U = U(x) be the Upper Limit
 \newline Both L,U are Random Variables because they are functions of sample data.
 \newline
-\newline\Large\textbf{Confidence Level / Confidence Coefficient}
+\newline\Large\textbf{Def: Confidence Level / Confidence Coefficient}
 \newline Is the probability that the \textbf{interval estimate} will include population parameter $\theta$.
 \begin{itemize}
 	\item Sample means will follow the \textul{normal probability distribution} for large sample sizes (n $\ge$ 30)
@@ -48,10 +48,7 @@ $\hat\theta$ is a point estimator of $\theta$ (it is a numerical value)
 	\item The most frequently used confidence levels are 90$\%$, 95$\%$, and 99$\%$ with corresponding Z-scores 1.645, 1.96, 2.576.
 	\item The higher the confidence level, the more strongly we believe that the value of the parameter lies within the interval.
 \end{itemize}
-
-
-\newpage
-\Large\textbf{Confidence Interval}
+\Large\textbf{Def: Confidence Interval}
 \newline Gives plausible values for the parameter $\theta$ being estimated where degree of plausibility specified by a confidence level.
 \newline
 \newline To construct an interval estimator of unknown parameter $\theta$. We must find two statistics \textbf{L} and \textbf{U} such that:
@@ -60,8 +57,28 @@ $\hat\theta$ is a point estimator of $\theta$ (it is a numerical value)
 	\item $P \{\textbf{L} \le \theta \le \textbf{U} \}$ \textbf{Coverage Probability}, in repeated sampling, what percent of samples or Confident Intervals capture true $\theta$.
 	\item 100(1- $\alpha$) \textbf{Confidence Interval }- for unknown fixed parameter $\theta$.
 	\item L,U - \textbf{Lower and Upper Bounds} - RVs because they are functions of sample data. Vary from sample to sample.
-	\item 1-$\alpha$ \textbf{Confidence Level} Probability that estimate will include population parameter
+	\item 1-$\alpha$ \textbf{Confidence Level} Probability that estimate will include population parameter $\theta$.
+	\item $\alpha$ \textbf{Level of Significance} Percent chance Confidence Interval will not contain population parameter $\theta$.\newline
 \end{itemize}
+\Large\textbf{Def: Coverage Probability}
+\newline $P \{\textbf{L} \le \theta \le \textbf{U} \}$ Gives what $\%$ of samples or Confidence Intervals capture true $\theta$.
+\newline
+\newline Ex: Coverage Probability = 95$\%$
+\newline\Large\rule{1.3cm}{0pt} Will capture $\theta$, 95$\%$ of the time.
+\newline\Large\rule{1.3cm}{0pt} Will NOT capture $\theta$, 5$\%$ of the time.
+\newline
+\newline\Large\textbf{Properties of Confidence Intervals}
+\begin{itemize}
+	\item Confidence Intervals are not unique.
+	\item Desirable to have E[Length of CI] to be small.
+	\item If L = -$\infty$ or  U = $\infty$ then we have a one sided interval.
+	\item If L,U are both finite, then we have a two sided interval.\newline
+\end{itemize}
+\Large\textbf{Correctly Interpreting Confidence Intervals}
+\newline \textbf{Not Correct}
+\newline There is 90$\%$ probability that the true population mean is within the interval.
+\newline \textbf{Correct}
+\newline There is a 90$\%$ probability that any given Confidence Interval from a random sample will contain the true population mean.
 %\Large\rule{2.3cm}{0pt} \textbf{fixed}
  %\textbf{(Unbiased Estimator)}\newline
  
