@@ -8,6 +8,8 @@
 \usepackage{amsmath}
 \usepackage{centernot}
 \usepackage{soul}
+\usepackage{graphicx}
+\graphicspath{ {../documentation/} }
 \setul{}{1pt}
 
 \begin{document}
@@ -45,7 +47,7 @@ $\hat\theta$ is a point estimator of $\theta$ (it is a numerical value)
 	\item Sample means will follow the \textul{normal probability distribution} for large sample sizes (n $\ge$ 30)
 	\item For small sample  forces us to use the \textul{t-distribution} probability distribution(n $<$ 30)
 	\item \textul{A confidence level of 95$\%$} implies that \textbf{95$\%$ of all samples would give an interval that includes $\theta$, and only 5$\%$of all samples would yield an erroneous interval.}
-	\item The most frequently used confidence levels are 90$\%$, 95$\%$, and 99$\%$ with corresponding Z-scores 1.645, 1.96, 2.576.
+	\item \textul{The most frequently used confidence levels are 90$\%$, 95$\%$, and 99$\%$ with corresponding Z-scores 1.645, 1.96, 2.576.}
 	\item The higher the confidence level, the more strongly we believe that the value of the parameter lies within the interval.
 \end{itemize}
 \Large\textbf{Def: Confidence Interval}
@@ -89,13 +91,43 @@ $\hat\theta$ is a point estimator of $\theta$ (it is a numerical value)
 \newline Suppose a random sample n, ($X_1, X_2,...,X_n$) is taken.
 \newline A 100(1-$\alpha$)$\%$ confidence interval on $\mu$ can be obtained by considering sampling distribution of the sample mean $\bar{X}$.
 \newline
-\newline\textbf{Central Limit Theorem:} 
+\newline\Large\rule{1.3cm}{0pt}\textbf{Central Limit Theorem:} 
+\newline\Large\rule{1.3cm}{0pt} E($\bar{X}$) = $\mu$ and SD($\bar{X}$) = $\dfrac{\sigma}{\sqrt{n}}$, so $\bar{X} \sim \mathcal{N}(\mu, \dfrac{\sigma ^2}{ n })  $ as n$\to \infty$
 \newline
-\newline E($\bar{X}$) = $\mu$ and SD($\bar{X}$) = $\dfrac{\sigma}{\sqrt{n}}$, so $\bar{X} \sim \mathcal{N}(\mu, \dfrac{\sigma ^2}{ n })  $ as n$\to \infty$
-\newline
-\newline Standardizing $\bar{X}$, Z will be a Standard Normal Distribution
+\newline \Large\rule{1.3cm}{0pt} Let Z = Standardizing $\bar{X}$, Z will follow a Standard Normal Distribution
 \newline 
-\newline Let Z = $\dfrac{\bar{X} - \mu}{\sigma \\/ \sqrt{n} } \sim \mathcal{N}(0, 1) $
+\newline\Large\rule{1.3cm}{0pt} Let Z = $\dfrac{\bar{X} - \mu}{\sigma \\/ \sqrt{n} } \sim \mathcal{N}(0, 1) $
+\newline 
+\newline We can see from the image to the \textul{left:} \textbf{Distribution of Z} and the image to the \textul{right:} \textbf{Confidence Interval of 95$\%$}
+\newline
+\includegraphics[scale=0.7]{distribution_of_Z}
+\includegraphics[scale=0.7]{ci_95}
+\newline We can see that:
+\newline 
+\[  P \{ -Z_{\alpha\\/2} \le Z \le Z_{\alpha\\/2}  \}  = 1 - \alpha  \] 
+\newline substituting Z into equation:
+\[  P \{ -Z_{\alpha\\/2} \le \dfrac{\bar{X} - \mu}{\sigma \\/ \sqrt{n} }  \le Z_{\alpha\\/2}  \}  = 1 - \alpha  \] 
+\newline isolating $\mu$:
+\[  P \{ \bar{X}-Z_{\alpha\\/2} (\sigma \\/ \sqrt{n}) \le \mu \le \bar{X}+Z_{\alpha\\/2} (\sigma \\/ \sqrt{n})  \}   = 1 - \alpha  \] 
+\newline Conclusion
+$\left[\bar{X} - Z_{\alpha\\/2} (\sigma \\/ \sqrt{n}), \bar{X} + Z_{\alpha\\/2} (\sigma \\/ \sqrt{n}) \right] $ is a 100(1-$\alpha$) CI for $\mu$ 
+\newline
+\newline\textbf{How to Construct Confidence Interval Using Pivot Approach:} 
+\newline Suppose we have a random sample X$_1$,X$_2$,...,X$_n$ from a population distribution and the parameter of interest is $\theta$.
+\newline
+\newline Given value $\alpha \in (0,1)$. We would like to construct a 1-$\alpha$ Confidence Interval using a Pivot Approach:
+\begin{enumerate}
+	\item\textbf{Find a variable Y, that is function of the parameter $\theta$ and data x.}
+	\item\textbf{The distribution of newly created variable Y is free of $\theta$.}
+\end{enumerate}
+\textul{In many cases:}
+\newline\Large\rule{3.0cm}{0pt}$Y = \dfrac{\hat{\theta} - \theta}{ SE(\hat{\theta})}$ is a pivot and the distribution of Y is symmetric about 0.
+\newline
+\newline
+\newline\Large\textbf{ Using Pivot Approach for Two-Sided Intervals:}
+\newline Find the cut points(quantiles)  c$_{\alpha \\/ 2}$ such that:
+\[  P \{ c_{\alpha \\/ 2} \le Y \le c_{\alpha \\/ 2}  \}   = 1 - \alpha  \] 
+c$_{\alpha \\/ 2}$ is the upper ($\alpha$ / 2)100th percentile.
 %\Large\rule{2.3cm}{0pt} \textbf{fixed}
  %\textbf{(Unbiased Estimator)}\newline
  
