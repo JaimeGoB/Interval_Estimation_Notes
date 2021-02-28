@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  28 FEB 2021 01:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  28 FEB 2021 01:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**template_Article.tex
-(./template_Article.tex
+**interval_estimation.tex
+(./interval_estimation.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -139,8 +139,8 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen153
 \SOUL@ulht=\dimen154
 )
-(./template_Article.aux)
-\openout1 = `template_Article.aux'.
+(./interval_estimation.aux)
+\openout1 = `interval_estimation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -194,30 +194,35 @@ LaTeX Font Info:    ... okay on input line 13.
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[2] (./template_Article.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
+
+ []
+
+[2] (./interval_estimation.aux) ) 
 Here is how much of TeX's memory you used:
  2711 strings out of 480608
- 40998 string characters out of 5903631
- 294644 words of memory out of 5000000
+ 41028 string characters out of 5903631
+ 294653 words of memory out of 5000000
  18621 multiletter control sequences out of 15000+600000
  539018 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,40p,342b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvi
-ps/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-su
-per/sfrm1440.pfb>
-Output written on template_Article.pdf (2 pages, 77327 bytes).
+ 44i,6n,40p,345b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/
+dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm
+-super/sfrm1440.pfb>
+Output written on interval_estimation.pdf (2 pages, 77777 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
