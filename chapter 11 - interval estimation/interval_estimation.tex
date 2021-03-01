@@ -126,8 +126,41 @@ $\left[\bar{X} - Z_{\alpha\\/2} (\sigma \\/ \sqrt{n}), \bar{X} + Z_{\alpha\\/2} 
 \newline
 \newline\Large\textbf{ Using Pivot Approach for Two-Sided Intervals:}
 \newline Find the cut points(quantiles)  c$_{\alpha \\/ 2}$ such that:
-\[  P \{ c_{\alpha \\/ 2} \le Y \le c_{\alpha \\/ 2}  \}   = 1 - \alpha  \] 
+\[  P \{ -c_{\alpha \\/ 2} \le Y \le c_{\alpha \\/ 2}  \}   = 1 - \alpha  \] 
 c$_{\alpha \\/ 2}$ is the upper ($\alpha$ / 2)100th percentile.
+\newline
+\newline\textbf{Visualizing elements from Pivot Approach:}
+\newline Let $\mu$ be parameter of interest. We can construct CI using pivot approach.
+\newline
+\includegraphics[scale=0.6]{general_ci_example}
+\newline
+\newline
+\newline 
+\newline
+\newline
+\Large\textbf{Symmetric Two-sided CI:}
+\Large\textbf{Theorem}
+\newline $ \hat\theta \pm c_{\alpha \\/ 2}(SE(\hat\theta))$ is a $100(1-\alpha)\%$ confidence interval for $\theta$
+\newline 
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt}  $ 1 - \alpha =  P \{ -c_{\alpha \\/ 2} \le Y \le c_{\alpha \\/ 2}  \}$
+\newline
+\newline\Large\rule{4.3cm}{0pt}  $=  P \{ -c_{\alpha \\/ 2} \le \dfrac{\hat{\theta} - \theta}{ SE(\hat{\theta})}  \le c_{\alpha \\/ 2}  \}$
+\newline
+\newline\Large\rule{4.3cm}{0pt}  $=  P \{ \hat\theta -c_{\alpha \\/ 2} (SE(\hat\theta))  \le Y \le \hat\theta +c_{\alpha \\/ 2}(SE(\hat\theta))  \} $
+\newline
+\newline\Large\rule{4.3cm}{0pt} $\implies \hat\theta$ is \textbf{within} $c_{\alpha \\/ 2} (SE(\hat\theta))$ of $\theta$ with \textbf{probability}  1-$\alpha$
+\newline
+\newline $c_{\alpha \\/ 2} (SE(\hat\theta))$ is known as \textit{Margin of Error} (size of error in estimation)
+\newline Ex: In polls you might hear accurate with 0.02 (this is margin of error)
+\newline
+\newline\Large\textbf{Asymmetric Two-sided CI(Non-symmetric distributions):}
+\newline $ \hat\theta \pm c_{\alpha \\/ 2}(SE(\hat\theta))$ is a $100(1-\alpha)\%$ confidence interval for $\theta$ CHANGE THIS!!!!!!!!!!!!!!
+\newline
+\newline Example:
+\newline\includegraphics[scale=0.5]{chi_square_distribution}
+\newline\includegraphics[scale=0.53]{ci_chi_square_distribution}
+
 %\Large\rule{2.3cm}{0pt} \textbf{fixed}
  %\textbf{(Unbiased Estimator)}\newline
  
