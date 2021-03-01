@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  1 MAR 2021 00:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  1 MAR 2021 00:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -449,62 +449,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
+<../documentation/one_sided_ci.png, id=37, 740.7675pt x 515.9275pt>
+File: ../documentation/one_sided_ci.png Graphic file (type png)
+<use ../documentation/one_sided_ci.png>
+Package pdftex.def Info: ../documentation/one_sided_ci.png  used on input line 
+184.
+(pdftex.def)             Requested size: 444.46393pt x 309.55888pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--192
+Underfull \hbox (badness 10000) in paragraph at lines 176--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--192
+Underfull \hbox (badness 10000) in paragraph at lines 176--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--192
+Underfull \hbox (badness 10000) in paragraph at lines 176--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--192
+Underfull \hbox (badness 10000) in paragraph at lines 176--197
 
  []
 
-[7 <../documentation/ci_chi_square_distribution.png>] [8]
-(./interval_estimation.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--197
+
+ []
+
+[7 <../documentation/ci_chi_square_distribution.png>] [8 <../documentation/one_
+sided_ci.png>] (./interval_estimation.aux) ) 
 Here is how much of TeX's memory you used:
- 3485 strings out of 480608
- 52156 string characters out of 5903631
+ 3492 strings out of 480608
+ 52355 string characters out of 5903631
  314798 words of memory out of 5000000
- 19361 multiletter control sequences out of 15000+600000
+ 19368 multiletter control sequences out of 15000+600000
  539636 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,40p,345b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvip
-s/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super
-/sfrm1440.pfb>
-Output written on interval_estimation.pdf (8 pages, 891017 bytes).
+{/usr/local/texlive/2020/texmf-dist
+/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+public/cm-super/sfrm1440.pfb>
+Output written on interval_estimation.pdf (8 pages, 1419009 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
