@@ -164,15 +164,11 @@ c$_{\alpha \\/ 2}$ is the upper ($\alpha$ / 2)100th percentile.
 \newline\Large\rule{4.3cm}{0pt}  $=  P \{ c_{1- \alpha \\/ 2} \le \dfrac{\hat{\theta} - \theta}{ SE(\hat{\theta})}  \le c_{\alpha \\/ 2}  \}$
 \newline
 \newline\Large\rule{4.3cm}{0pt}  $=  P \{ \hat\theta - c_{\alpha \\/ 2}(SE(\hat\theta))  \le \theta \le \hat\theta - c_{1- \alpha \\/ 2}(SE(\hat\theta))  \} $
+\newline\newline Ex: Chi-Square distribution critical points
+\newline\includegraphics[scale=0.6]{assymetric_ci}
 \newline
-\newline\includegraphics[scale=0.53]{ci_chi_square_distribution}
 \newline
-\newline Both variance and standard deviation are non-negative numbers. \textul{The Chi-Square distribution allows us to construct confidence intervals for the variance and the standard deviation (when the original population of data is normally distributed).}
-\newline\newline Since the distribution is not symmetrical(asymmetrical) you cannot just take plus,minus cut points. We can see from the image above that the \textbf{area to the right of cut off points} are:
-\begin{itemize}
-	\item Lower bound critical point : 1-$\alpha /2$ 
-	\item Upper bound critical point: $\alpha /2$\newline\newline
-\end{itemize}
+\newline
 \Large\textbf{One-sided Confidence Bound:}
 \newline A one-sided confidence bound defines the point where a certain percentage of the population is either higher or lower than the defined point.
 \newline
@@ -197,8 +193,49 @@ c$_{\alpha \\/ 2}$ is the upper ($\alpha$ / 2)100th percentile.
 \newline For \textbf{Lower Bound} critical region $\in [ c_{\alpha} ,  \infty ]$:We are sure \textul{parameter $\theta$ is below} $c_{\alpha}$ 
 \newline
 \newline For \textbf{Upper Bound} critical region $\in [ - \infty , c_{1- \alpha} ]$:We are sure \textul{parameter $\theta$ is above} $c_{1- \alpha}$ 
-
-
+\newline
+\newline
+\newline
+\newline
+\Large\textbf{Confidence Interval on the Mean of a Normal Distribution
+\newline Variance Unknown:}
+\newline
+\newline $ \bar{X} \pm t_{\alpha \\/ 2 , n - 1}\left(  \dfrac{s}{\sqrt{n}}  \right)$ is a $100(1-\alpha)\%$ confidence interval for $\theta$
+\newline
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt} We know that t$_{n-1 }  \sim  \dfrac{\bar{X} - \mu}{ S \\/ \sqrt{n}    }  $
+\newline
+\newline\Large\rule{3.0cm}{0pt}  $ 1- \alpha =  P \{ - t_{\alpha \\/ 2 , n - 1} \le t \le t_{\alpha \\/ 2 , n - 1}  \}$
+\newline
+\newline\Large\rule{4.3cm}{0pt}  $=  P \{ - t_{\alpha \\/ 2 , n - 1} \le  \dfrac{\bar{X} - \mu}{ S \\/ \sqrt{n}}  \le t_{\alpha \\/ 2 , n - 1}  \}$
+\newline
+\newline\Large\rule{4.3cm}{0pt}  $=  P \{ \bar{X}  - t_{\alpha \\/ 2 , n - 1} (S \/ \sqrt{n})  \le \mu \le \bar{X} +  t_{\alpha \\/ 2 , n - 1} ( S \/ \sqrt{n})  \}$
+\newline
+\newline
+\newline
+\newline\newline
+\newline
+\newline
+\newline\newline
+\newline
+\newline
+\newline\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\Large\textbf{Confidence Interval on the Variance or Standard Deviation of \newline a Normal Distribution}
+\newline
 %\Large\rule{2.3cm}{0pt} \textbf{fixed}
  %\textbf{(Unbiased Estimator)}\newline
  
