@@ -83,35 +83,6 @@ $\hat\theta$ is a point estimator of $\theta$ (it is a numerical value)
 \newline \textbf{Correct}
 \newline There is a 90$\%$ probability that \textul{any given Confidence Interval from a random sample} will contain the true population mean.
 \newline
-\newline
-\Large\textbf{Theorem 11.1: Confidence Interval on the Mean of a Normal Distribution with known Variance}
-\newline Let X be normal random variable with:
-\newline\Large\rule{1.3cm}{0pt} Unknown mean $\mu$
-\newline\Large\rule{1.3cm}{0pt} Known variance $\sigma ^2$
-\newline Suppose a random sample n, ($X_1, X_2,...,X_n$) is taken.
-\newline A 100(1-$\alpha$)$\%$ confidence interval on $\mu$ can be obtained by considering sampling distribution of the sample mean $\bar{X}$.
-\newline
-\newline\Large\rule{1.3cm}{0pt}\textbf{Central Limit Theorem:} 
-\newline\Large\rule{1.3cm}{0pt} E($\bar{X}$) = $\mu$ and SD($\bar{X}$) = $\dfrac{\sigma}{\sqrt{n}}$, so $\bar{X} \sim \mathcal{N}(\mu, \dfrac{\sigma ^2}{ n })  $ as n$\to \infty$
-\newline
-\newline \Large\rule{1.3cm}{0pt} Let Z = Standardizing $\bar{X}$, Z will follow a Standard Normal Distribution
-\newline 
-\newline\Large\rule{1.3cm}{0pt} Let Z = $\dfrac{\bar{X} - \mu}{\sigma \\/ \sqrt{n} } \sim \mathcal{N}(0, 1) $
-\newline 
-\newline We can see from the image to the \textul{left:} \textbf{Distribution of Z} and the image to the \textul{right:} \textbf{Confidence Interval of 95$\%$}
-\newline
-\includegraphics[scale=0.7]{distribution_of_Z}
-\includegraphics[scale=0.7]{ci_95}
-\newline We can see that:
-\newline 
-\[  P \{ -Z_{\alpha\\/2} \le Z \le Z_{\alpha\\/2}  \}  = 1 - \alpha  \] 
-\newline substituting Z into equation:
-\[  P \{ -Z_{\alpha\\/2} \le \dfrac{\bar{X} - \mu}{\sigma \\/ \sqrt{n} }  \le Z_{\alpha\\/2}  \}  = 1 - \alpha  \] 
-\newline isolating $\mu$:
-\[  P \{ \bar{X}-Z_{\alpha\\/2} (\sigma \\/ \sqrt{n}) \le \mu \le \bar{X}+Z_{\alpha\\/2} (\sigma \\/ \sqrt{n})  \}   = 1 - \alpha  \] 
-\newline Conclusion
-$\left[\bar{X} - Z_{\alpha\\/2} (\sigma \\/ \sqrt{n}), \bar{X} + Z_{\alpha\\/2} (\sigma \\/ \sqrt{n}) \right] $ is a 100(1-$\alpha$) CI for $\mu$ 
-\newline
 \newline\textbf{How to Construct Confidence Interval Using Pivot Approach:} 
 \newline Suppose we have a random sample X$_1$,X$_2$,...,X$_n$ from a population distribution and the parameter of interest is $\theta$.
 \newline
@@ -137,7 +108,6 @@ c$_{\alpha \\/ 2}$ is the upper ($\alpha$ / 2)100th percentile.
 \newline
 \newline
 \newline 
-\newline
 \newline
 \Large\textbf{Symmetric Two-sided CI:}
 \Large\textbf{Theorem}
@@ -169,6 +139,8 @@ c$_{\alpha \\/ 2}$ is the upper ($\alpha$ / 2)100th percentile.
 \newline
 \newline
 \newline
+\newline
+\newline
 \Large\textbf{One-sided Confidence Bound:}
 \newline A one-sided confidence bound defines the point where a certain percentage of the population is either higher or lower than the defined point.
 \newline
@@ -197,54 +169,256 @@ c$_{\alpha \\/ 2}$ is the upper ($\alpha$ / 2)100th percentile.
 \newline
 \newline
 \newline
-\Large\textbf{Confidence Interval on the Mean of a Normal Distribution
-\newline Variance Unknown:}
+\Large\textbf{Choice of Sample Size for CI for Mean when Variance Known }
 \newline
-\newline $ \bar{X} \pm t_{\alpha \\/ 2 , n - 1}\left(  \dfrac{s}{\sqrt{n}}  \right)$ is a $100(1-\alpha)\%$ confidence interval for $\theta$
+\newline General form of a CI:
+\newline 100(1-$\alpha$)$\%$ CI for $\theta$: $\hat{\theta} \pm c_{\alpha / 2} SE(\hat{\theta})$ 
+\newline
+\newline Mean $\mu$ of a Normal population: $\bar{x} \pm Z_{\alpha / 2 } \left( \dfrac{\sigma}{\sqrt{n}} \right)$
+\newline \textbf{Margin Of Error:}  MOE = $Z_{\alpha / 2 } \left( \dfrac{\sigma}{\sqrt{n}} \right)$
+\newline
+\newline
+\newline \textbf{Width of CI:} 2 $\times$ MOE = $2 \cdot Z_{\alpha / 2 } \left( \dfrac{\sigma}{\sqrt{n}} \right)$
+\newline
+\newline \textbf{Properties of MOE:} 
+\begin{itemize}
+	\item\textbf{As (1-$\alpha$) increases MOE increases:}
+	\newline The larger the CI, the larger critical points are needed. 
+	\newline As \textul{critical points increase,} Margin Of Error:  \textul{MOE} = $Z_{\alpha / 2 } \left( \dfrac{\sigma}{\sqrt{n}} \right)$ \textul{increase}
+	\newline $\implies$ Increase in CI will make width of CI wider
+	\item\textbf{As $\sigma$ increases MOE increases:}
+	\newline
+	\newline Margin Of Error: MOE = $Z_{\alpha / 2 } \left( \dfrac{\sigma}{\sqrt{n}} \right)$ \textul{$\sigma$ is part of numerator}, if it increases it will make \textul{MOE increase} too.
+	\item\textbf{As \textit{n} increases MOE decreases:}
+		\newline
+	\newline Margin Of Error: MOE = $Z_{\alpha / 2 } \left( \dfrac{\sigma}{\sqrt{n}} \right)$ \textul{n is part of denominator}, if it increases it will make \textul{MOE decrease.}
+	\newline
+\end{itemize}
+\textbf{Getting n from predefined MOE:} 
+\newline Let E$_0$ be a pre-specified MOE. We can a value for n to make the following equation true.
+\newline
+\newline $\dfrac{Z_{\alpha / 2} \cdot \sigma}{\sqrt{n}}  \le E_0 $ solving for n we get: $n \ge \left( \dfrac{Z_{\alpha / 2} \cdot \sigma}{\sqrt{n} } \right)^2 $ (round up to nearest n.)
+\newline
+\newline We do this when we want to know how many observations (n) will give pre-specified margin of error - E$_0$
+\newline
+\newline
+\newline
+\newline
+\Large\textbf{Theorem 11.1: Confidence Interval on the Mean of a Normal Distribution with known Variance}
+\newline Let X be normal random variable with:
+\newline\Large\rule{1.3cm}{0pt} Unknown mean $\mu$
+\newline\Large\rule{1.3cm}{0pt} Known variance $\sigma ^2$
+\newline Suppose a random sample n, ($X_1, X_2,...,X_n$) is taken.
+\newline A 100(1-$\alpha$)$\%$ confidence interval on $\mu$ can be obtained by considering sampling distribution of the sample mean $\bar{X}$.
+\newline
+\newline\Large\rule{1.3cm}{0pt}\textbf{Central Limit Theorem:} 
+\newline\Large\rule{1.3cm}{0pt} E($\bar{X}$) = $\mu$ and SD($\bar{X}$) = $\dfrac{\sigma}{\sqrt{n}}$, so $\bar{X} \sim \mathcal{N}(\mu, \dfrac{\sigma ^2}{ n })  $ as n$\to \infty$
+\newline
+\newline \Large\rule{1.3cm}{0pt} Let Z = Standardizing $\bar{X}$, Z will follow a Standard Normal Distribution
+\newline 
+\newline\Large\rule{1.3cm}{0pt} Let Z = $\dfrac{\bar{X} - \mu}{\sigma \\/ \sqrt{n} } \sim \mathcal{N}(0, 1) $
+\newline 
+\newline We can see from the image to the \textul{left:} \textbf{Distribution of Z} and the image to the \textul{right:} \textbf{Confidence Interval of 95$\%$}
+\newline
+\includegraphics[scale=0.7]{distribution_of_Z}
+\includegraphics[scale=0.7]{ci_95}
+\newline We can see that:
+\newline 
+\[  P \{ -Z_{\alpha\\/2} \le Z \le Z_{\alpha\\/2}  \}  = 1 - \alpha  \] 
+\newline substituting Z into equation:
+\[  P \{ -Z_{\alpha\\/2} \le \dfrac{\bar{X} - \mu}{\sigma \\/ \sqrt{n} }  \le Z_{\alpha\\/2}  \}  = 1 - \alpha  \] 
+\newline isolating $\mu$:
+\[  P \{ \bar{X}-Z_{\alpha\\/2} (\sigma \\/ \sqrt{n}) \le \mu \le \bar{X}+Z_{\alpha\\/2} (\sigma \\/ \sqrt{n})  \}   = 1 - \alpha  \] 
+\newline Conclusion
+$ \bar{X} \pm Z_{\alpha\\/2} (\sigma / \sqrt{n}) $ is a 100(1-$\alpha$)$\%$ CI for $\mu$ 
+\newline
+\Large\textbf{Confidence Interval on the Mean of a Normal Distribution
+	\newline Variance Unknown and/or Small Sample:}
+\newline
+\newline $ \bar{X} \pm t_{n - 1, \alpha \\/ 2} \left(  \dfrac{s}{\sqrt{n}}  \right)$ is a $100(1-\alpha)\%$ CI for $\mu$
 \newline
 \newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
-\newline\Large\rule{3.0cm}{0pt} We know that t$_{n-1 }  \sim  \dfrac{\bar{X} - \mu}{ S \\/ \sqrt{n}    }  $
+\newline\Large\rule{3.0cm}{0pt} We know that T = ${ \dfrac{\bar{X} - \mu}{ S \\/ \sqrt{n}}} \sim t_{n-1} $
 \newline
-\newline\Large\rule{3.0cm}{0pt}  $ 1- \alpha =  P \{ - t_{\alpha \\/ 2 , n - 1} \le t \le t_{\alpha \\/ 2 , n - 1}  \}$
+\newline\Large\rule{3.0cm}{0pt}  $ 1- \alpha =  P \{ - t_{n - 1, \alpha \\/ 2} \le T \le t_{n - 1, \alpha \\/ 2}  \}$
 \newline
-\newline\Large\rule{4.3cm}{0pt}  $=  P \{ - t_{\alpha \\/ 2 , n - 1} \le  \dfrac{\bar{X} - \mu}{ S \\/ \sqrt{n}}  \le t_{\alpha \\/ 2 , n - 1}  \}$
+\newline\Large\rule{4.3cm}{0pt}  $=  P \{ - t_{n - 1, \alpha \\/ 2} \le  \dfrac{\bar{X} - \mu}{ S \\/ \sqrt{n}}  \le t_{n - 1, \alpha \\/ 2}  \}$
 \newline
-\newline\Large\rule{4.3cm}{0pt}  $=  P \{ \bar{X}  - t_{\alpha \\/ 2 , n - 1} (S \/ \sqrt{n})  \le \mu \le \bar{X} +  t_{\alpha \\/ 2 , n - 1} ( S \/ \sqrt{n})  \}$
+\newline\Large\rule{4.3cm}{0pt}  $=  P \{ \bar{X}  - t_{n - 1, \alpha \\/ 2} (S \/ \sqrt{n})  \le \mu \le \bar{X} +  t_{n - 1, \alpha \\/ 2}( S \/ \sqrt{n})  \}$
+\newline
+\newline
+\Large\textbf{Confidence Interval on the Mean no Specific Distribution \newline Variance Known}
+\newline
+\newline $ \bar{X} \pm Z_{\alpha\\/2} (\sigma / \sqrt{n}) $ is a 100(1-$\alpha$)$\%$ CI for $\mu$ 
+\newline 
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt} Assuming the sample size is large (n $\ge$ 30) then by CLT:
+\newline
+\newline\Large\rule{3.0cm}{0pt}  Z = $\dfrac{\bar{X} - \mu}{\sigma \\/ \sqrt{n} } \sim N(0,1)$
+\newline
+\newline\Large\rule{3.0cm}{0pt} The mean of any distribution \textbf{provided} n is large (n $\ge$ 30) \newline\Large\rule{3.0cm}{0pt} can be approximated using a Normal Distribution.
+\newline
+\newline
+\Large\textbf{Confidence Interval on the Mean no Specific Distribution \newline Variance Unknown}
+\newline
+\newline $ \bar{X} \pm Z_{\alpha\\/2} ( S / \sqrt{n}) $ is a 100(1-$\alpha$)$\%$ CI for $\mu$ 
+\newline 
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt} Given the fact that S$^2$ is and unbiased estimator of $\sigma ^2$ we can
+\newline\Large\rule{3.0cm}{0pt} \textul{use sample variance in lieu of population variance.} Also
+\newline\Large\rule{3.0cm}{0pt}  sample size is large (n $\ge$ 30) then by CLT and LLN:
+\newline
+\newline\Large\rule{3.0cm}{0pt}  Z = $\dfrac{\bar{X} - \mu}{ S \\/ \sqrt{n} } = \dfrac{\bar{X} - \mu}{ \sigma \\/ \sqrt{n} } \left(\dfrac{\sigma}{S} \right) =  \dfrac{\bar{X} - \mu}{ \sigma \\/ \sqrt{n} } \sim N(0,1)$
+\newline
+\newline
+\newline \Large\textbf{Confidence Interval on the Proportion of a Binomial Distribution}
+\newline
+\newline $\hat{p} \pm Z_{\alpha\\/2}\sqrt{\dfrac{\hat{p} (1-\hat{p} )}{n}} $ is a 100(1-$\alpha$)$\%$ CI for p 
+\newline
+\newline \textit{n} is random sample of size \textit{n} has been taken from a large population and X($\le n$) observations in this sample belong to a class of interest. 
+\newline $\hat{p} = X/n$ is the point estimator of the proportion of the population that belongs to this class. 
+\newline \textit{n} and p are the parameters of a binomial distribution.
+\newline 
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt} The sampling distribution of $\hat{p}$ is approximately normal with mean p and 
+\newline\Large\rule{3.0cm}{0pt} variance p(1-p)$/$n, if p is not too close to 0 or 1 and \textit{n} is large.
+\newline
+\newline\Large\rule{3.0cm}{0pt}  Z = $\dfrac{\hat{p} - p}{ \sqrt{\dfrac{p(1-p)}{n}}  } \sim N(0,1)$
+\newline
+\newline\Large\rule{3.0cm}{0pt} To construct CI on p, note that:
+\newline
+\newline\Large\rule{3.0cm}{0pt} $1 - \alpha \approx P \{ -Z_{\alpha\\/2} \le Z \le Z_{\alpha\\/2}  \}$
+\newline
+\newline\Large\rule{4.3cm}{0pt} $ \approx  P \{ -Z_{\alpha\\/2} \le \dfrac{\hat{p} - p}{ \sqrt{\dfrac{p(1-p)}{n}}  } \le Z_{\alpha\\/2}  \}$
+\newline
+\newline
+\newline\Large\rule{4.3cm}{0pt} $ \approx  P \{\hat{p} - Z_{\alpha\\/2}\sqrt{\dfrac{p(1-p)}{n}}  \le p \le \hat{p} + Z_{\alpha\\/2}\sqrt{\dfrac{p(1-p)}{n}}   \}$
+\newline
+\newline\Large\rule{3.0cm}{0pt} Since the square root is the SE of estimator $\hat{p}$ and 
+\newline\Large\rule{3.0cm}{0pt} also contains p in lower and upper bound.
+\newline\Large\rule{3.0cm}{0pt} We can replace p with $\hat{p}$ and use Estimated SE instead of SE.
+\newline
+\newline\Large\rule{4.3cm}{0pt} $ \approx  P \{\hat{p} - Z_{\alpha\\/2}\sqrt{\dfrac{\hat{p} (1-\hat{p} )}{n}}  \le p \le \hat{p} + Z_{\alpha\\/2}\sqrt{\dfrac{\hat{p} (1-\hat{p} )}{n}}   \}$
 \newline
 \newline
 \newline
+\newline
+\newline
+\newline
+\newline
+\Large\textbf{Confidence Interval on the Variance or Standard Deviation of \newline a Normal Distribution - Mean is Unknown}
+\newline
+\newline
+$\left[ \dfrac{(n-1)S^2}{\chi^{2}_{n-1,\alpha/2 }}, \dfrac{(n-1)S^2}{\chi^{2}_{n-1,1-\alpha/2 }} \right] $ is a 100(1-$\alpha$)$\%$ CI for $\sigma^2$ 
+\newline 
+\newline
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt} According to theorem 8.11:
+\newline 
+\newline\Large\rule{3.0cm}{0pt}  Y = $\dfrac{ \sum_{i=1}^{n} (x_i - \bar{x})^2  }{ \sigma^2 } = \dfrac{(n-1)S^2}{\sigma^2} \sim \chi^{2}_{n-1}$
+\newline
+\newline\Large\rule{3.0cm}{0pt} The critical points are: $\chi^{2}_{n-1,1-\alpha/2 }$ and $\chi^{2}_{n-1,\alpha/2 }$
+\newline
+\newline\Large\rule{3.0cm}{0pt} $1 - \alpha = P \{ \chi^{2}_{n-1,1-\alpha/2 } \le \dfrac{(n-1)S^2}{\sigma^2} \le \chi^{2}_{n-1,\alpha/2 } \} $
+\newline
+\newline\Large\rule{4.3cm}{0pt} $= P \left[  \dfrac{(n-1)S^2}{\chi^{2}_{n-1,\alpha/2 }}      \le   \sigma^2   \le  \dfrac{(n-1)S^2}{\chi^{2}_{n-1,1-\alpha/2 }}   \right]$
+\newline 
+\newline 
+\Large\textbf{Confidence Interval on the Variance or Standard Deviation of \newline a Normal Distribution - Mean is Known}
+\newline
+\newline
+$\left[ \dfrac{(n)S^2}{\chi^{2}_{n,\alpha/2 }}, \dfrac{(n)S^2}{\chi^{2}_{n,1-\alpha/2 }} \right] $ is a 100(1-$\alpha$)$\%$ CI for $\sigma^2$ 
+\newline 
+\newline
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt} Since $\mu$ is known then:
+\newline\Large\rule{3.0cm}{0pt} Sum of n, squared standard normal distributions 
+\newline\Large\rule{3.0cm}{0pt} $\implies$ Sum of n Chi-Square distributions with one df
+\newline\Large\rule{3.0cm}{0pt} $\implies$ $\chi^{2}_{n}$
+\newline 
+\newline\Large\rule{3.0cm}{0pt}  Y = $\dfrac{ \sum_{i=1}^{n} (x_i - \mu )^2  }{ \sigma^2 } = \left( \dfrac{x_1 - \mu }{\sigma} \right) ^2 + ...+ \left( \dfrac{x_n - \mu }{\sigma} \right) ^2  \sim \chi^{2}_{n}$
+\newline
+\newline\Large\rule{3.0cm}{0pt} The critical points are: $\chi^{2}_{n,1-\alpha/2 }$ and $\chi^{2}_{n,\alpha/2 }$
+\newline
+\newline\Large\rule{3.0cm}{0pt} $1 - \alpha = P \{ \chi^{2}_{n,1-\alpha/2 } \le \dfrac{(n)S^2}{\sigma^2} \le \chi^{2}_{n,\alpha/2 } \} $
+\newline
+\newline\Large\rule{4.3cm}{0pt} $= P \left[  \dfrac{(n)S^2}{\chi^{2}_{n,\alpha/2 }}      \le   \sigma^2   \le  \dfrac{(n)S^2}{\chi^{2}_{n,1-\alpha/2 }}   \right]$
+\newline 
+\newline 
+\Large\textbf{Two-Sample Confidence Interval Estimation}
+\newline
+\Large\textbf{Confidence Interval on the Difference between Means of Two Normal Distributions, Variances Known}
+\newline In this case both \textul{means are unknown but variances are known.}
+\newline
+\newline
+$\left[ \bar{X_{1}} - \bar{X_{2}} \pm \left( Z_{\alpha / 2}  \right) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2}    }      \right] $ is a 100(1-$\alpha$)$\%$ CI for $\mu_1 - \mu_2$ 
+\newline 
+\newline
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt} Let X$_1$ and X$_2$ be two normally distributed independent random variables.
+\newline\Large\rule{3.0cm}{0pt} X$_1 \sim N( \mu_1, \sigma^2_1 )$  and X$_2 \sim N( \mu_2, \sigma^2_2 )$ 
+\newline\Large\rule{3.0cm}{0pt} So, $\mu_1 - \mu_2 = \bar{X}_1 - \bar{X}_2$ $\implies$ SE($\bar{X}_1 - \bar{X}_2$) = SD($\bar{X}_1 - \bar{X}_2$) = $\sqrt{Var(\bar{X}_1 - \bar{X}_2 )}$
+\newline\newline\Large\rule{3.0cm}{0pt} Because Var(A - B ) = Var(A) - Var(B) when A,B are independent
+\newline\newline\Large\rule{3.0cm}{0pt} SE($\bar{X}_1 - \bar{X}_2$) = $\sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2} }$
+\newline\newline\Large\rule{3.0cm}{0pt} Independent random samples from normal populations:
+\newline\newline\Large\rule{3.0cm}{0pt} Z = $\dfrac{  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2)   }{\sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2} }} \sim N(0,1)$
+\newline\newline\Large\rule{3.0cm}{0pt}  Now, to construct a CI:
+\newline\Large\rule{3.0cm}{0pt} $1 - \alpha = P \{ -Z_{\alpha\\/2} \le Z \le Z_{\alpha\\/2}  \}$
+\newline
+\newline\Large\rule{4.3cm}{0pt} $ = P \{ -Z_{\alpha\\/2} \le    \dfrac{  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2)   }{\sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2} }}    \le Z_{\alpha\\/2}  \}$
+\newline
+\newline
+\newline\Large\rule{3.3cm}{0pt} $ = P \left[  (-Z_{\alpha\\/2} ) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2} }  \le  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2)  \le (Z_{\alpha\\/2}) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2} }  \right]$
 \newline\newline
-\newline
-\newline
-\newline\newline
-\newline
-\newline
-\newline\newline
+\newline\Large\rule{2.3cm}{0pt} $ = P \left[   \bar{X_{1}} - \bar{X_{2}} - \left( Z_{\alpha / 2}  \right) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2}    }  \le  \mu_1 - \mu_2    \le   \bar{X_{1}} - \bar{X_{2}} + \left( Z_{\alpha / 2}  \right) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2}    }  \right]$
 \newline
 \newline
 \newline
 \newline
+\Large\textbf{Confidence Interval on the Difference between Means of Two Normal Distributions, Variances Unknown or Small Samples}
+\newline Both \textul{means and variances are unknown.} However, we can assume $\sigma^2_1 = \sigma^2_2 =\sigma^2$
+\newline
+\newline
+$\left[ \bar{X_{1}} - \bar{X_{2}} \pm \left( t_{n_{1}+ n_{2} -2 , \alpha / 2 }  \right) S_p \cdot  \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}    }      \right] $ is a 100(1-$\alpha$)$\%$ CI for $\mu_1 - \mu_2$ 
+\newline 
+\newline
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt} Let $S^2_1$ and $S^2_2$ be sample variances of random variables $X_1$ and $X_2$. Since 
+\newline\Large\rule{3.0cm}{0pt} both sample variances are estimates of common variance $\sigma^2$ we can obtain
+\newline\Large\rule{3.0cm}{0pt}  a "pooled estimator" of $\sigma^2$.
+\newline\Large\rule{3.0cm}{0pt} 
+\newline\Large\rule{3.0cm}{0pt} $S^2_p = \dfrac{(n_1 -1)S^2_1 + (n_2 - 1) S^2_2}{n_2 + n_1- 2} \sim \chi^2_{n_1 -1} + \chi^2_{n_2 -1}$ 
+\newline\newline\Large\rule{3.0cm}{0pt} Now pivot T
+\newline\newline\Large\rule{3.0cm}{0pt} T = $\dfrac{  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2)   }{S_p \cdot \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2} }} \sim t_{n_1 + n_2 - 2}$
+\newline
+\newline\newline\Large\rule{3.0cm}{0pt}  Now, to construct a CI:
+\newline\Large\rule{3.0cm}{0pt} $1 - \alpha = P \{ -t_{n_1 + n_2 - 2, \alpha / 2} \le T \le t_{n_1 + n_2 - 2, \alpha /2} \}$ 
+\newline
+\newline
+\newline\Large\rule{2.3cm}{0pt} $ = P \{ -t_{n_1 + n_2 - 2, \alpha / 2} \le \dfrac{ ( \bar{X}_1 - \bar{X}_  ) - (\mu_1 - \mu_2)   }{S_p \cdot \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2} }} \le t_{n_1 + n_2 - 2, \alpha /2} \}$
 \newline
 \newline
 \newline
+$P \left[  -t_{n_1 + n_2 - 2, \alpha / 2} \left( S_p \cdot \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}} \right) \le  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2) \le t_{n_1 + n_2 - 2, \alpha /2} \left( S_p \cdot \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}} \right)  \right]$
 \newline
 \newline
+\newline After solving for both population means:
 \newline
-\newline
-\newline
-\newline
-\newline
-\Large\textbf{Confidence Interval on the Variance or Standard Deviation of \newline a Normal Distribution}
-\newline
-\newline\includegraphics[scale=0.55]{ci_var_sd}
-\newline
-\newline\includegraphics[scale=0.55]{ci_var_sd2}
+\newline$P\left[  \bar{X}_1 - \bar{X}_2 - ( t_{n_1 + n_2 - 2, \alpha / 2} ) S_p \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}}  \le  \mu_1 - \mu_2 \le  \bar{X}_1 - \bar{X}_2  +  (t_{n_1 + n_2 - 2, \alpha /2}) S_p \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}} \right]$
 %\Large\rule{2.3cm}{0pt} \textbf{fixed}
  %\textbf{(Unbiased Estimator)}\newline
  
 \section{}
 
 \end{document}
+
+
+
+
+
+
+
+
 
 
 
