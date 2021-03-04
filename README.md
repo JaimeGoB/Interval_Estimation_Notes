@@ -17,5 +17,4 @@
   <img src="https://github.com/JaimeGoB/Interval_Estimation_Notes/blob/main/documentation/14.png">
   <img src="https://github.com/JaimeGoB/Interval_Estimation_Notes/blob/main/documentation/15.png">
   <img src="https://github.com/JaimeGoB/Interval_Estimation_Notes/blob/main/documentation/16.png">
-  <img src="https://github.com/JaimeGoB/Interval_Estimation_Notes/blob/main/documentation/17.png">
 </p>
