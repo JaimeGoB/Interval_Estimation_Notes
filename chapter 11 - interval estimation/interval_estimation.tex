@@ -370,9 +370,10 @@ $\left[ \bar{X_{1}} - \bar{X_{2}} \pm \left( Z_{\alpha / 2}  \right) \sqrt{\dfra
 \newline
 \newline
 \newline\Large\rule{3.3cm}{0pt} $ = P \left[  (-Z_{\alpha\\/2} ) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2} }  \le  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2)  \le (Z_{\alpha\\/2}) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2} }  \right]$
-\newline\newline
-\newline\Large\rule{2.3cm}{0pt} $ = P \left[   \bar{X_{1}} - \bar{X_{2}} - \left( Z_{\alpha / 2}  \right) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2}    }  \le  \mu_1 - \mu_2    \le   \bar{X_{1}} - \bar{X_{2}} + \left( Z_{\alpha / 2}  \right) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2}    }  \right]$
 \newline
+\newline\Large\rule{3.3cm}{0pt} After solving for difference in population means:
+\newline
+\newline\Large\rule{2.3cm}{0pt} $ = P \left[   \bar{X_{1}} - \bar{X_{2}} - \left( Z_{\alpha / 2}  \right) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2}    }  \le  \mu_1 - \mu_2    \le   \bar{X_{1}} - \bar{X_{2}} + \left( Z_{\alpha / 2}  \right) \sqrt{\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2}    }  \right]$
 \newline
 \newline
 \Large\textbf{Confidence Interval on the Difference between Means of Two Normal Distributions, Variances Unknown or Small Samples}
@@ -388,7 +389,7 @@ $\left[ \bar{X_{1}} - \bar{X_{2}} \pm \left( t_{n_{1}+ n_{2} -2 , \alpha / 2 }  
 \newline\Large\rule{3.0cm}{0pt}  a  \textul{pooled estimator}  of $\sigma^2$.
 \newline\Large\rule{3.0cm}{0pt} 
 \newline\Large\rule{3.0cm}{0pt} $S^2_p = \dfrac{(n_1 -1)S^2_1 + (n_2 - 1) S^2_2}{n_2 + n_1- 2} \sim \chi^2_{n_1 -1} + \chi^2_{n_2 -1}$ 
-\newline\newline\Large\rule{3.0cm}{0pt} Now pivot T
+\newline\newline\Large\rule{3.0cm}{0pt} Now setting up pivot T:
 \newline\newline\Large\rule{3.0cm}{0pt} T = $\dfrac{  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2)   }{S_p \cdot \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2} }} \sim t_{n_1 + n_2 - 2}$
 \newline
 \newline\newline\Large\rule{3.0cm}{0pt}  Now, to construct a CI:
@@ -403,7 +404,7 @@ $\left[ \bar{X_{1}} - \bar{X_{2}} \pm \left( t_{n_{1}+ n_{2} -2 , \alpha / 2 }  
 $P \left[  -t_{n_1 + n_2 - 2, \alpha / 2} \left( S_p \cdot \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}} \right) \le  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2) \le t_{n_1 + n_2 - 2, \alpha /2} \left( S_p \cdot \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}} \right)  \right]$
 \newline
 \newline
-\newline After solving for both population means:
+\newline After solving for difference in population means:
 \newline
 \newline$P\left[  \bar{X}_1 - \bar{X}_2 - ( t_{n_1 + n_2 - 2, \alpha / 2} ) S_p \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}}  \le  \mu_1 - \mu_2 \le  \bar{X}_1 - \bar{X}_2  +  (t_{n_1 + n_2 - 2, \alpha /2}) S_p \sqrt{\dfrac{1}{n_1} + \dfrac{1}{n_2}} \right]$
 \newline
@@ -419,12 +420,14 @@ $\left[ \bar{X_{1}} - \bar{X_{2}} \pm \left( t_{v, \alpha / 2 }  \right) \sqrt{\
 \newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
 \newline\Large\rule{3.0cm}{0pt} From previous cases we know that:
 \newline\Large\rule{3.0cm}{0pt}   \fbox{$\bar{X}_1 - \bar{X}_2 \sim N(\bar{X}_1 - \bar{X}_2,\dfrac{\sigma^2_1}{n_1} + \dfrac{\sigma^2_2}{n_2}  )$}  
-\newline\newline\Large\rule{3.0cm}{0pt} Now let Y be the \textul{approximate} pivot:
+\newline\newline\Large\rule{3.0cm}{0pt} Now let statistic T be the \textul{approximate} pivot:
 \newline\newline\Large\rule{3.0cm}{0pt} T = $\dfrac{  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2)   }{\sqrt{\dfrac{S^2_1}{n_1} + \dfrac{S^2_2}{n_2}}} \approx t_{v}$ 
 where df
 v = $\dfrac{  (  S^2_1 / n_1  + S^2_2 / n_2  )^2  }{  \dfrac{(S^2_1 / n_1)^2}{n_1 +1}   +  \dfrac{(S^2_2 / n_2)^2}{n_2 +1}    }$
 \newline
 \newline 
+\newline\Large\rule{3.0cm}{0pt} Now, to construct CI:
+\newline
 \newline\Large\rule{3.0cm}{0pt} $1 - \alpha = P \{ -t_{v, \alpha / 2} \le T \le t_{v, \alpha / 2} \}$ 
 \newline
 \newline
@@ -435,11 +438,9 @@ v = $\dfrac{  (  S^2_1 / n_1  + S^2_2 / n_2  )^2  }{  \dfrac{(S^2_1 / n_1)^2}{n_
 $P \left[  -t_{v, \alpha / 2} \left( \sqrt{\dfrac{S^2_1}{n_1} + \dfrac{S^2_2}{n_2}} \right) \le  (  \bar{X}_1 - \bar{X}_2 )  -  (\mu_1 - \mu_2) \le t_{v, \alpha /2} \left( \sqrt{\dfrac{S^2_1}{n_1} + \dfrac{S^2_2}{n_2}} \right)  \right]$
 \newline
 \newline
-\newline After solving for both population means:
+\newline After solving for difference in population means:
 \newline
 \newline$P \left[ \bar{X}_1 - \bar{X}_2 - ( t_{v, \alpha / 2} )  \sqrt{\dfrac{S^2_1}{n_1} + \dfrac{S^2_2}{n_2}}  \le  \mu_1 - \mu_2 \le \bar{X}_1 - \bar{X}_2  + ( t_{v, \alpha /2} ) \sqrt{\dfrac{S^2_1}{n_1} + \dfrac{S^2_2}{n_2}}  \right]$
-\newline 
-\newline
 \newline 
 \newline
 \newline 
@@ -452,6 +453,52 @@ $P \left[  -t_{v, \alpha / 2} \left( \sqrt{\dfrac{S^2_1}{n_1} + \dfrac{S^2_2}{n_
 \newline
 \newline
 \includegraphics[scale=0.99]{visualizing_ratio_variances}
+\newline
+\Large\textbf{Confidence Interval on the Difference between Two Proportions}
+\newline If two independent samples of size n$_1$ and  n$_2$ are taken from infinite populations so that \textul{X$_1$ and X$_2$ are independent}, binomial random variables with parameters (n$_1$, p$_1$) and (n$_2$, p$_2$).
+\newline X$_1$ represents the number of sample observations from the first population that belong to the class of interest.
+\newline X$_2$ represents the number of sample observations from the second population that belong to the class of interest.
+\newline population proportion estimators: $\hat{p_1} =  \dfrac{X_1}{n_1}$  and $\hat{p_2} =  \dfrac{X_2}{n_2}$ of  p$_1$ and p$_2$.
+\newline
+\newline 
+\newline
+$\left[ \hat{p_{1}} - \hat{p_{2}} \pm \left( Z_{\alpha / 2 }  \right) \sqrt{\dfrac{ \hat{p_1} (1 -\hat{p_1}) }{n_1} + \dfrac{ \hat{p_2} (1 -\hat{p_2}) }{n_2}}  \right] $ is a 100(1-$\alpha$)$\%$ CI for $p_1 - p_2$ 
+\newline 
+\newline
+\newline\Large\rule{3.0cm}{0pt} \textbf{Proof:}
+\newline\Large\rule{3.0cm}{0pt} $\hat{p_{1}}, \hat{p_{2}} $ are unbiased estimators of  p$_1$ and p$_2$\textit{ (independent of each other.)}
+\newline 
+\newline\Large\rule{3.0cm}{0pt} E($\hat{p_1} - \hat{p_2}$) = E($\hat{p_1}) -E( \hat{p_2}$) = $p_1 - p_2$
+\newline
+\newline\Large\rule{3.0cm}{0pt} Var($\hat{p_1} - \hat{p_2}$) = Var($\hat{p_1}) + Var( \hat{p_2}$) = $\dfrac{p_1 (1 - p_1)}{n_1} + \dfrac{p_2 (1 - p_2)}{n_2}$
+\newline
+\newline\Large\rule{3.0cm}{0pt} SE($\hat{p_1} - \hat{p_2}$) = SD($\hat{p_1} - \hat{p_2}$) = $\sqrt{Var(\hat{p_1} - \hat{p_2})  }$= $\sqrt{\dfrac{p_1 (1 - p_1)}{n_1} + \dfrac{p_2 (1 - p_2)}{n_2}}$
+\newline\newline\Large\rule{3.0cm}{0pt} Now let statistic Z be the \textul{approximate} pivot:
+\newline
+\newline\Large\rule{3.0cm}{0pt} Z = $\dfrac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2) }{\sqrt{\dfrac{p_1 (1 - p_1)}{n_1} + \dfrac{p_2 (1 - p_2)}{n_2}}} \approx N(0,1)$
+\newline
+\newline
+\newline\Large\rule{3.0cm}{0pt} Now, to construct CI:
+\newline
+\newline\Large\rule{3.0cm}{0pt} $1 - \alpha \approx P \{ -Z_{\alpha / 2} \le Z \le Z_{\alpha / 2} \}$ 
+\newline
+\newline
+\newline\Large\rule{4.3cm}{0pt} $\approx P \{ -Z_{ \alpha / 2} \le \dfrac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2) }{\sqrt{\dfrac{p_1 (1 - p_1)}{n_1} + \dfrac{p_2 (1 - p_2)}{n_2}}}  \le Z_{\alpha /2} \}$
+\newline 
+\newline
+\newline 
+\newline\Large\rule{3.0cm}{0pt} Since the square root is the SE of estimator $\hat{p}$ and 
+\newline\Large\rule{3.0cm}{0pt} also contains p in lower and upper bound.
+\newline\Large\rule{3.0cm}{0pt} We can replace p with $\hat{p}$ and use Estimated SE instead of SE.
+\newline\Large\rule{3.0cm}{0pt} (Point estimates for sample proportion are unbiased)
+\newline 
+\newline $\approx P \{ -Z_{ \alpha / 2} \sqrt{\dfrac{p_1 (1 - p_1)}{n_1} + \dfrac{p_2 (1 - p_2)}{n_2}}  \le (\hat{p_1} - \hat{p_2}) - (p_1 - p_2)  \le Z_{\alpha /2} \sqrt{\dfrac{p_1 (1 - p_1)}{n_1} + \dfrac{p_2 (1 - p_2)}{n_2}} \}$
+\newline
+\newline 
+\newline\Large\rule{3.0cm}{0pt} After solving for difference of population proportions:
+\newline
+\newline $P \{ \hat{p_1} - \hat{p_2}-Z_{ \alpha / 2} \sqrt{\dfrac{ \hat{p_1} (1 - \hat{p_1})}{n_1} + \dfrac{\hat{p_2} (1 - \hat{p_2})}{n_2}}  \le p_1 - p_2  \le \hat{p_1} - \hat{p_2} + Z_{\alpha /2} \sqrt{\dfrac{\hat{p_1} (1 - \hat{p_1})}{n_1} + \dfrac{\hat{p_2} (1 - \hat{p_2})}{n_2}} \}$
+\newline 
 %\Large\rule{2.3cm}{0pt} \textbf{fixed}
  %\textbf{(Unbiased Estimator)}\newline
  
